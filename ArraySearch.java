@@ -6,7 +6,8 @@ public class ArraySearch {
 	// First make a large array.
 	//int N = 1_000;
 	//int N = 10_000;
-	int N = 100_000;
+	//int N = 100_000;
+        int N = 20;
 
 	int[] A = new int [N];
 	for (int i=0; i<N; i++) {
@@ -46,7 +47,9 @@ public class ArraySearch {
         int end = A.length - 1;
 
         while (start <= end) {
+            System.out.println ("start=" + start + " end=" + end);
             int mid = (start + end) / 2;
+            System.out.println ("mid=" + mid);
             if (value == A[mid]) {
                 return true;
             }
@@ -56,6 +59,7 @@ public class ArraySearch {
             else {
                 start = mid+1;
             }
+            
         }
         return false;
     }
