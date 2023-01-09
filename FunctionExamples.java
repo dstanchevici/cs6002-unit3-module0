@@ -4,7 +4,7 @@ public class FunctionExamples {
     public static void main (String[] argv)
     {
 	// The range of n that we're looking at.
-	int nLow = 1, nHigh=10, nStep=1;
+	int nLow = 10, nHigh=100, nStep=1;
 
 	for (int n=nLow; n<=nHigh; n+=nStep) {
 	    double f = 2*n;               // f(n) = 2n
